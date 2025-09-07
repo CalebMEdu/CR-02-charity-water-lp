@@ -1,47 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>charity: water · Help bring clean water to everyone</title>
+  <meta name="description" content="Join the movement to end the water crisis. Learn, see impact, and take action with charity: water." />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Optional: Google font with broad fallback; remove if you prefer defaults -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <!-- Hero Section: This is the main banner at the top of the page -->
-    <section class="hero">
-        <!-- Main headline -->
-        <h1>Clean Water for Everyone</h1>
-        <!-- Subheadline -->
-        <p>Join us in bringing safe, clean water to communities in need.</p>
-    </section>
+  <!-- Skip link for accessibility -->
+  <a class="skip" href="#main">Skip to content</a>
 
-    <!-- Story Section: This tells the story of the nonprofit -->
-    <section class="story">
-        <h2>Our Story</h2>
-        <p>
-         
-    </section>
+  <!-- Top bar -->
+  <header class="topbar" role="banner">
+    <div class="wrap">
+      <a class="brand" href="#">
+        <span class="drop" aria-hidden="true">💧</span>
+        <span class="brand-text">charity: water</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#story">Why water?</a>
+        <a href="#impact">Impact</a>
+        <a href="#how">How it works</a>
+        <a href="#donate" class="btn btn--primary">Donate</a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Real-World Impact Story Section -->
-    <section class="impact-story">
-        <!-- Section headline -->
-        <h2>Real Impact: Meet Amina</h2>
-        <!-- Container for image and text -->
-        <div class="impact-content">
-            <!-- Impact image -->
-            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Amina smiling with clean water" class="impact-image">
-            <!-- Impact story text -->
-            <p>
-                Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
-            </p>
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="wrap hero__grid">
+      <div class="hero__copy">
+        <h1>Bring clean water to families—today.</h1>
+        <p class="lead">
+          703 million people still live without clean water. Your gift funds
+          sustainable projects that change health, time, and opportunity.
+        </p>
+        <div class="cta-row">
+          <a href="#donate" class="btn btn--primary btn--lg">Donate Now</a>
+          <a href="#how" class="btn btn--ghost">How your gift works</a>
         </div>
+        <p class="micro">100% of public donations fund clean water projects.</p>
+      </div>
+      <div class="hero__media">
+        <img src="img/hero.jpg" alt="Community celebrating around a new clean water source" />
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+    <!-- STATS BAND -->
+    <section class="band band--stats" aria-label="Impact highlights">
+      <div class="wrap stats">
+        <div class="stat">
+          <span class="stat__num">110K+</span>
+          <span class="stat__label">projects funded</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">15M+</span>
+          <span class="stat__label">people served</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">29</span>
+          <span class="stat__label">countries</span>
+        </div>
+      </div>
     </section>
 
-    <!-- Call-to-Action Section: This encourages visitors to take action -->
-    <section class="call-to-action">
-        <h2>Make a Difference</h2>
-        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
-        <a href="#" class="donate-button">Donate Now</a>
+    <!-- STORY -->
+    <section class="section section--story" id="story" aria-labelledby="story-title">
+      <div class="wrap section__grid">
+        <div class="media-card">
+          <img src="img/story.jpg" alt="Young student filling a bottle with clean water at school" />
+        </div>
+        <div class="section__copy">
+          <h2 id="story-title">Why water?</h2>
+          <p>
+            Clean water changes everything. It improves health, keeps kids—especially girls—in
+            school, and powers local economies. When a village gets reliable water, time spent
+            walking for water becomes time spent learning, working, and living.
+          </p>
+          <ul class="benefits">
+            <li>Health: prevents waterborne disease</li>
+            <li>Education: frees students to learn</li>
+            <li>Opportunity: unlocks work & enterprise</li>
+          </ul>
+          <a href="#donate" class="btn btn--secondary">Fund a project</a>
+        </div>
+      </div>
     </section>
+
+    <!-- IMPACT STORY -->
+    <section class="section section--impact" id="impact" aria-labelledby="impact-title">
+      <div class="wrap impact">
+        <div class="impact__copy">
+          <h2 id="impact-title">Real impact: Meet Amina</h2>
+          <p>
+            Amina used to walk miles every day to collect water. With a nearby well, her family is
+            healthier and she’s back in school. Thousands of stories like Amina’s are possible
+            because people like you chose to help.
+          </p>
+          <a href="#donate" class="btn btn--primary">Give monthly</a>
+          <p class="micro">Monthly giving sustains projects year-round.</p>
+        </div>
+        <figure class="impact__media">
+          <img src="img/amina.jpg" alt="Amina drawing clean water from a village well" />
+          <figcaption>Clean water turns distance and disease into dignity and opportunity.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section section--how" id="how" aria-labelledby="how-title">
+      <div class="wrap">
+        <h2 id="how-title" class="center">How your gift works</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="step__icon" aria-hidden="true">①</div>
+            <h3>You give</h3>
+            <p>Your donation goes 100% to clean water projects.</p>
+          </div>
+          <div class="step">
+            <div class="step__icon" aria-hidden="true">②</div>
+            <h3>We partner</h3>
+            <p>Local teams design solutions that last—wells, filters, rain capture.</p>
+          </div>
+          <div class="step">
+            <div class="step__icon" aria-hidden="true">③</div>
+            <h3>Communities thrive</h3>
+            <p>Health, education, and income rise with reliable water access.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="section section--cta" id="donate" aria-labelledby="cta-title">
+      <div class="wrap center">
+        <h2 id="cta-title">Be the reason a community celebrates clean water</h2>
+        <p class="lead">Start a fundraiser with friends or make a one-time gift.</p>
+        <div class="cta-row">
+          <a href="#" class="btn btn--primary btn--lg">Donate Now</a>
+          <a href="#" class="btn btn--ghost">Start a campus campaign</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="wrap">
+      <p class="micro">© <span>Student Project</span>. This page is for learning purposes and is not the official charity: water site.</p>
+    </div>
+  </footer>
 </body>
 </html>
